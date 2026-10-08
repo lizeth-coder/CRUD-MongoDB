@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-        <h2>persona a eliminar</h2>
+        <h2>Libro a eliminar</h2>
 
         <h4>
             Si se elimina no se podra recuperar,
@@ -13,15 +13,19 @@
         <hr>
         
         <p>
-            <strong>Nombre:</strong> {{ $item->nombre }}
+            <strong>Título:</strong> {{ $item->titulo }}
         </p>
 
         <p>
-            <strong>Apellido:</strong> {{ $item->apellido }}
+            <strong>Autor:</strong> {{ $item->autor }}
         </p>
 
         <p>
-            <strong>Edad:</strong> {{ $item->edad }}
+            <strong>Género:</strong> {{ $item->genero }}
+        </p>
+
+        <p>
+            <strong>Año de Publicación:</strong> {{ $item->anio_publicacion }}
         </p>
 
         <hr>

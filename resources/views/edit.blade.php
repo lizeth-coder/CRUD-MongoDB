@@ -15,41 +15,52 @@
             @method("PUT")
 
             <div class="form-group">
-                <label for="nombre">Nombre</label>
+                <label for="titulo">Título</label>
 
                 <input
                     type="text"
                     class="form-control"
-                    id="nombre"
-                    name="nombre"
-                    value="{{ $item->nombre }}"
+                    id="titulo"
+                    name="titulo"
+                    value="{{ $item->titulo }}"
                     required
                 >
             </div>
 
             <div class="form-group">
-                <label for="apellido">Apellido</label>
+                <label for="autor">Autor</label>
 
                 <input
                     type="text"
                     class="form-control"
-                    id="apellido"
-                    name="apellido"
-                    value="{{ $item->apellido }}"
+                    id="autor"
+                    name="autor"
+                    value="{{ $item->autor }}"
                     required
                 >
             </div>
 
             <div class="form-group">
-                <label for="edad">Edad</label>
+                <label for="genero">Género</label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    id="genero"
+                    name="genero"
+                    value="{{ $item->genero }}"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="anio_publicacion">Año de Publicación</label>
 
                 <input
                     type="number"
                     class="form-control"
-                    id="edad"
-                    name="edad"
-                    value="{{ $item->edad }}"
-                    required
+                    id="anio_publicacion"
+                    name="anio_publicacion"
+                    value="{{ $item->anio_publicacion }}"
                 >
             </div>
 

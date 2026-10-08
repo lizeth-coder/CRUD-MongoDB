@@ -21,7 +21,6 @@ class LibroController extends Controller
 
     /**
      * Crea un nuevo libro en la base de datos
-     * 
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\JsonResponse
      */

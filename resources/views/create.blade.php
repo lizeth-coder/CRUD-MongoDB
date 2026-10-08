@@ -13,24 +13,33 @@
 
             @method("POST")
 
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" class="form-control">
+            <label for="titulo">Título</label>
+            <input type="text" name="titulo" id="titulo" class="form-control" required>
 
             <br>
 
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" class="form-control">
+            <label for="autor">Autor</label>
+            <input type="text" name="autor" id="autor" class="form-control" required>
 
             <br>
 
-            <label for="edad">Edad</label>
-            <input type="number" name="edad" id="edad" class="form-control">
+            <label for="genero">Género</label>
+            <input type="text" name="genero" id="genero" class="form-control">
+
+            <br>
+
+            <label for="anio_publicacion">Año de Publicación</label>
+            <input type="number" name="anio_publicacion" id="anio_publicacion" class="form-control">
 
             <br>
 
             <button class="btn btn-primary">
                 Guardar
             </button>
+
+            <a href="{{ route('index') }}" class="btn btn-info">
+                Regresar
+            </a>
 
         </form>
 

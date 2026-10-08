@@ -18,16 +18,17 @@
         @endif
 
         <a href="{{ route('create') }}" class="btn btn-primary">
-            Agregar nueva persona
+            Agregar nuevo libro
         </a>
         <hr>
         <table class="table table-bordered">
 
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Edad</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Género</th>
+                    <th>Año de Publicación</th>
                     <th>Editar</th>
                     <th>Eliminar</th>
                 </tr>
@@ -39,11 +40,13 @@
 
                 <tr>
 
-                    <td>{{ $i->nombre }}</td>
+                    <td>{{ $i->titulo }}</td>
 
-                    <td>{{ $i->apellido }}</td>
+                    <td>{{ $i->autor }}</td>
 
-                    <td>{{ $i->edad }}</td>
+                    <td>{{ $i->genero }}</td>
+
+                    <td>{{ $i->anio_publicacion }}</td>
 
                     <td>
                         <a href="{{ route('edit', $i->id) }}" class="btn btn-warning">
